@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Spotify View Test</title>
+  </head>
+  <body>
+    <h1>Spotify Take Home Challenge</h1>
+    <p>This page makes a GET request to /people. Scroll down to the list to see the formatted output. Note that each person object has an ID, a name, and a favorite city.</p>
+    <section class="input">
+      <h1>Tell me about your friend:</h1>
+      <p>This form allows you to make a POST request to /people.</p>
+      <form class="form" action="index.html" method="post">
+        <input id="name" type="text" name="name" placeholder="Name">
+        <input id="city" type="text" name="favorite_city" placeholder="Favorite City">
+        <input class="button" type="submit" name="submit" value="Submit">
+      </form>
+    </section>
+    <section class="output">
+      <p>You can make a PUT and a DELETE request by clicking on the respective links to the right of each person object.</p>
+      <ul class="people-list">
+        <li class="table-header">
+          <span class="id">ID</span>
+          <span class="name">Name</span>
+          <span class="favorite_city">Favorite City</span>
+        </li>
+      </ul>
+      <p>Using jQuery, the list updates without refreshing the page.</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <a href="https://spotify-test-mg.herokuapp.com/people">Link to Server (Heroku)</a>
+    <a href="https://github.com/melaniegershman/spot-api">Link to Server (GitHub)</a>
+  </footer>
+</html>
